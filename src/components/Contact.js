@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div>
+    <div id="contact">
       <p>
         <a href="#">daemon@supervoid.tv</a>
       </p>

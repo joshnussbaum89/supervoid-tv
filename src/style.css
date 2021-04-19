@@ -3,7 +3,6 @@
   font-family: brightfate;
   src: url("./Brightfate.otf");
 }
-
 :root {
   /* colors */
   --bg-primary: #050505;
@@ -17,39 +16,36 @@
   --large: 2rem;
   --extra-large: 3rem;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* Main styles */
 body {
-  margin: 0 1rem;
+  margin: 0 1.5rem;
   padding: 0;
   background: var(--bg-primary);
   color: var(--text-primary);
-  scroll-behavior: smooth;
   font-family: brightfate, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 nav,
 h1,
 h2,
 h3 {
   text-transform: uppercase;
 }
-
 h1:hover {
   color: var(--accent-primary);
 }
-
 a {
   color: var(--text-primary);
   text-decoration: none;
 }
-
 a:hover {
   color: var(--accent-primary);
 }
-
 .header {
   height: 100vh;
 }
@@ -61,12 +57,10 @@ a:hover {
   justify-content: space-between;
   margin: 4rem 0;
 }
-
 #header-nav h1 {
   margin: 0;
   font-size: var(--large);
 }
-
 #header-nav ul {
   font-size: var(--small);
   display: flex;
@@ -77,8 +71,24 @@ a:hover {
   list-style: none;
 }
 
-#header-nav ul li {
+/* Desktop nav */
+#header-nav .desktop-nav li {
   margin-left: 2rem;
+}
+#header-nav .desktop-nav {
+  display: none;
+}
+
+/* Mobile nav */
+#header-nav .mobile-nav {
+  display: flex;
+}
+.hamburger {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.hamburger:hover {
+  fill: var(--accent-primary);
 }
 
 /* About */
@@ -97,17 +107,18 @@ a:hover {
   body {
     margin: 1rem 4rem;
   }
-
-  #header-nav h1 {
-    font-size: var(--extra-large);
-  }
-
-  #header-nav ul {
-    font-size: var(--medium);
-  }
-
   #about {
     text-align: center;
     font-size: var(--large);
+  }
+  #header-nav h1 {
+    font-size: var(--extra-large);
+  }
+  #header-nav .desktop-nav {
+    font-size: var(--medium);
+    display: flex;
+  }
+  #header-nav .mobile-nav {
+    display: none;
   }
 }
