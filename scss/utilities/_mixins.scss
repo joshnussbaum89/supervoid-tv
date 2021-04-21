@@ -1,0 +1,92 @@
+/* ============================================= */
+/*              Mixins                           */
+/* ============================================= */
+
+// Center element
+@mixin center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Center content along X and Y axis -- make sure parent is "position: relative"
+@mixin absoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+// Centers content completely and sticks to page on scroll -- make sure parent is "position: relative"
+@mixin absoluteCenterFixed {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+// Flex container
+@mixin flexy(
+  $disp: flex,
+  $dir: null,
+  $wrap: null,
+  $just: null,
+  $align: null,
+  $grow: null
+) {
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+  align-items: $align;
+  flex-grow: $grow;
+}
+
+// Grid container
+@mixin grid(
+  $disp: grid,
+  $col: null,
+  $row: null,
+  $area: null,
+  $gap: null,
+  $place: null
+) {
+  display: $disp;
+  grid-template-columns: $col;
+  grid-template-rows: $row;
+  grid-template-areas: $area;
+  grid-gap: $gap;
+  place-items: $place;
+}
+
+// Max width
+@mixin max-width {
+  max-width: 100%;
+}
+
+// Media query
+@mixin mq-sm {
+  @media (min-width: $sm) {
+    @content;
+  }
+}
+
+@mixin mq-md {
+  @media (min-width: $md) {
+    @content;
+  }
+}
+
+@mixin mq-lg {
+  @media (min-width: $lg) {
+    @content;
+  }
+}
+
+@mixin mq-xlg {
+  @media (min-width: $xlg) {
+    @content;
+  }
+}

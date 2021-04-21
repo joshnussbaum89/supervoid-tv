@@ -1,0 +1,68 @@
+/* ============================================= */
+/*              Variables                        */
+/* ============================================= */
+
+// Colors
+$earth-green: #758b72;
+$btn-action: #4caf50;
+$mint: #58e1c1;
+$aqua: #52bab3;
+$mario: #5db1ad;
+$ocean: #3dafbe;
+$ocean-light: lighten($ocean, 15%);
+$text: #51575b;
+$text-light: #777f85;
+$babish-grey: #363636;
+$babish-black: #131416;
+$grey: #777;
+$white: #fff;
+$white-opaque: rgba(255, 255, 255, 0.75);
+$border: #ccc;
+$border-opaque: rgba(204, 204, 204, 0.75);
+$orange: #ff784f;
+$mountain: #d36a62;
+$mountain-bold: #a33830;
+$hot-red: #f22f46;
+$thouse: #3659a2;
+$text-field: #4683af;
+$overlay: rgba(11, 13, 77, 0.4);
+
+// Button Colors
+$button-default: #51ddfc;
+$button-default-light: lighten($button-default, 15%);
+
+$button-error: #e4757a;
+$button-error-light: lighten($button-error, 15%);
+
+$button-info: #927bc1;
+$button-info-light: lighten($button-info, 15%);
+
+$button-success: #63cc82;
+$button-success-light: lighten($button-success, 15%);
+
+$button-warning: #fd7856;
+$button-warning-light: lighten($button-warning, 15%);
+
+$button-blue: #4a89ca;
+$button-blue-light: lighten($button-blue, 15%);
+
+// Grid Colors
+$light-purple: #deb2ee;
+$light-blue: #7ee6fd;
+$mint-green: #88d9a0;
+$grey-blue: #4da2bb;
+$salmon: #ec9fa3;
+$light-orange: #fd9f85;
+$light-mint-green: #80e8d1;
+$dark-background: #4a463f;
+$heading-tan: #ffca99;
+$yellow: yellow;
+
+// Fonts
+$font-primary: "Lato", sans-serif;
+
+// Breakpoints
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xlg: 1200px;
