@@ -3,6 +3,23 @@
 /* ============================================= */
 
 @media (min-width: $md) {
+  body {
+    margin: 1rem 4rem;
+  }
+  #about {
+    text-align: center;
+    font-size: $large;
+  }
+  #header-nav h1 {
+    font-size: $extra-large;
+  }
+  #header-nav .desktop-nav {
+    font-size: $medium;
+    display: flex;
+  }
+  #header-nav .hamburger {
+    display: none;
+  }
 }
 
 @media (min-width: $lg) {

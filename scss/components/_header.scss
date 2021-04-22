@@ -1,3 +1,43 @@
 /* ============================================= */
 /*              Header                           */
 /* ============================================= */
+
+.header {
+  height: 100vh;
+}
+
+#header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0;
+  padding-bottom: 2rem;
+  border-radius: 10px;
+  border-bottom: 1px solid $accent-secondary;
+}
+#header-nav h1 {
+  margin: 0;
+  font-size: $large;
+}
+#header-nav ul {
+  font-size: $small;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Desktop nav */
+#header-nav .desktop-nav li {
+  margin-left: 2rem;
+}
+#header-nav .desktop-nav {
+  display: none;
+}
+
+/* Mobile nav */
+#header-nav .mobile-nav {
+  display: flex;
+}
