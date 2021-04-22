@@ -4,10 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Pre-loaded assets -->
+    <link rel="preload" href="css/style.css" as="style" />
+    <link rel="preload" href="app.js" as="script" />
+    <link
+      rel="preload"
+      href="Brightfate.otf"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <!-- Main styles -->
     <link rel="stylesheet" href="css/style.css" />
     <title>Supervoid</title>
   </head>
   <body>
+    <!-- loading screen -->
+    <div class="overlay">
+      <h1>Supervoid</h1>
+    </div>
     <div class="App">
       <!-- header -->
       <section class="header">
@@ -27,7 +42,8 @@
             </li>
           </ul>
 
-          <button class="hamburger hamburger--arrow" type="button">
+          <!-- Hamburger icon -->
+          <button class="hamburger hamburger--collapse" type="button">
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
             </span>
@@ -67,6 +83,7 @@
         </p>
       </section>
     </div>
+
     <script src="app.js"></script>
   </body>
 </html>

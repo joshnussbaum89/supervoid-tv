@@ -9,10 +9,16 @@
 }
 
 html {
+  position: relative;
   scroll-behavior: smooth;
 }
 
 /* Main styles */
+.App {
+  transition: 0.4s;
+  display: none;
+}
+
 body {
   margin: 0 1.5rem;
   padding: 0;
@@ -28,10 +34,6 @@ h2,
 h3 {
   text-transform: uppercase;
 }
-h1:hover {
-  opacity: 0.8;
-  // color: $accent-primary;
-}
 a {
   transition: 0.2s ease;
   color: $text-primary;
@@ -39,5 +41,4 @@ a {
 }
 a:hover {
   opacity: 0.8;
-  // color: $accent-primary;
 }
