@@ -38,7 +38,7 @@ a {
   transition: 0.2s ease;
   color: $text-primary;
   text-decoration: none;
-}
-a:hover {
-  opacity: 0.8;
+  &:hover {
+    opacity: 0.8;
+  }
 }

@@ -13,15 +13,17 @@
     text-align: center;
     font-size: $large;
   }
-  #header-nav h1 {
-    font-size: $extra-large;
-  }
-  #header-nav .desktop-nav {
-    font-size: $medium;
-    display: flex;
-  }
-  #header-nav .hamburger {
-    display: none;
+  #header-nav {
+    h1 {
+      font-size: $extra-large;
+    }
+    .desktop-nav {
+      font-size: $medium;
+      display: flex;
+    }
+    .hamburger {
+      display: none;
+    }
   }
 }
 
