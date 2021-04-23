@@ -1,0 +1,46 @@
+/* ============================================= */
+/*              work                             */
+/* ============================================= */
+
+#work {
+  padding-top: 2rem;
+  .work-item {
+    margin-top: 6rem;
+    text-align: left;
+    padding-bottom: 4rem;
+    // border-bottom: 1px dashed $accent-secondary;
+  }
+  .work-title {
+    font-size: $medium;
+    position: fixed;
+    left: 64px;
+    top: 0px;
+  }
+  .work-item-line {
+    width: 50%;
+    text-align: center;
+    color: $accent-secondary;
+  }
+  // .work-title {
+  //   font-size: $medium;
+  //   // position: fixed;
+  //   // left: 64px;
+  //   // top: 0px;
+  // }
+  // .work-title-sticky {
+  //   position: fixed;
+  //   left: 64px;
+  //   top: 0px;
+  // }
+  // .work-item:nth-child(odd) {
+  //   text-align: left;
+  // }
+  // .work-item:nth-child(even) {
+  //   text-align: right;
+  // }
+  img {
+    width: 90%;
+    display: block;
+    margin: 2rem auto;
+  }
+}

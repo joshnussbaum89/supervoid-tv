@@ -5,16 +5,10 @@
 /* About */
 #about {
   margin-top: 4rem;
+  margin-bottom: 4rem;
   text-align: left;
   font-size: $medium;
   p {
-    margin: 2rem 0;
-  }
-}
-
-#work {
-  img {
-    display: block;
-    margin: 4rem auto;
+    margin-top: 2rem;
   }
 }

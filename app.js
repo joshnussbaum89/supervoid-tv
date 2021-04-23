@@ -3,6 +3,7 @@
 /* ============================================= */
 // initialize Animate on Scroll library
 AOS.init();
+
 const hamburger = document.querySelector(".hamburger");
 
 /**
@@ -34,6 +35,13 @@ const hamburger = document.querySelector(".hamburger");
     overlay.style.display = "none";
     app.style.display = "block";
   }, 4000);
+
+  // Insure scroll animation works when user scrolls down page
+  let scrollRef = 0;
+  window.addEventListener("scroll", () => {
+    // increase value up to 10, then refresh AOS
+    scrollRef <= 10 ? scrollRef++ : AOS.refresh();
+  });
 })();
 
 /* ============================================= */
@@ -47,11 +55,35 @@ const toggleHamburger = () => {
   hamburger.classList.toggle("is-active");
 };
 
+const headerChangeOnScroll = () => {
+  const workTitles = {
+    0: "Music Videos",
+    1: "Animation",
+    2: "Livestream + Multi-cam Directing",
+    3: "Pre-Visualization",
+    4: "NOTCH",
+    5: "Lighting Design + Programming",
+    6: "Media Server Programming",
+  };
+
+  const workItems = document.querySelectorAll(".work-item");
+  const workTitle = document.querySelector(".work-title");
+  const userLocation = window.scrollY;
+  const workItemsArr = [...workItems];
+
+  workItemsArr.forEach((work) => {
+    // console.log(userLocation, work.offsetTop);
+    if (userLocation < 762) {
+      workTitle.textContent = "";
+    } else if (userLocation >= work.offsetTop) {
+      workTitle.textContent = workTitles[work.getAttribute("data-key")];
+    }
+  });
+};
+
 /* ============================================= */
 /*              Event Listeners                  */
 /* ============================================= */
 
 hamburger.addEventListener("click", toggleHamburger);
-// window.addEventListener("scroll", (e) => {
-//   console.log(window.scrollY);
-// });
+document.addEventListener("scroll", headerChangeOnScroll);

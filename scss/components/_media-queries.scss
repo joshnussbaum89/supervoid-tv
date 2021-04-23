@@ -25,7 +25,20 @@
       display: none;
     }
   }
+  #work {
+    .work-title {
+      font-size: $large;
+    }
+    img {
+      width: 64%;
+    }
+  }
 }
 
 @media (min-width: $lg) {
+  #work {
+    .work-title {
+      font-size: $large;
+    }
+  }
 }
