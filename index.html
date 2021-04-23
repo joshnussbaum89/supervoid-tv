@@ -7,13 +7,10 @@
     <!-- Pre-loaded assets -->
     <link rel="preload" href="css/style.css" as="style" />
     <link rel="preload" href="app.js" as="script" />
-    <link
-      rel="preload"
-      href="Brightfate.otf"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
+    <!-- Brightfate font -->
+    <link href="Brightfate.otf" as="font" />
+    <!-- AOS library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Main styles -->
     <link rel="stylesheet" href="css/style.css" />
     <title>Supervoid</title>
@@ -67,13 +64,62 @@
       </section>
 
       <!-- Work -->
-      <section id="work">
-        <img src="https://via.placeholder.com/650x350" alt="" />
-        <img src="https://via.placeholder.com/650x350" alt="" />
-        <img src="https://via.placeholder.com/650x350" alt="" />
-        <img src="https://via.placeholder.com/650x350" alt="" />
-        <img src="https://via.placeholder.com/650x350" alt="" />
-        <img src="https://via.placeholder.com/650x350" alt="" />
+      <section id="work" data-aos="fade-up">
+        <!-- Music Videos -->
+        <div id="music-videos">
+          <h2>Music Videos</h2>
+          <img src="http://placeimg.com/640/480/nature" alt="" />
+          <img src="http://placeimg.com/640/480/animals" alt="" />
+          <img src="http://placeimg.com/640/480/arch" alt="" />
+        </div>
+
+        <!-- Animation -->
+        <div id="animation" data-aos="fade-up">
+          <h2>Animation</h2>
+          <img src="http://placeimg.com/640/480/people" alt="" />
+          <img src="http://placeimg.com/640/480/tech" alt="" />
+          <img src="http://placeimg.com/640/480/nature/grayscale" alt="" />
+        </div>
+
+        <!-- Livestream + multi-cam directing -->
+        <div id="livesteam-multi-cam-directing" data-aos="fade-up">
+          <h2>Livestream + multi-cam directing</h2>
+          <img src="http://placeimg.com/640/480/nature" alt="" />
+          <img src="http://placeimg.com/640/480/animals" alt="" />
+          <img src="http://placeimg.com/640/480/arch" alt="" />
+        </div>
+
+        <!-- Pre-Visualization -->
+        <div id="pre-visualization" data-aos="fade-up">
+          <h2>Pre-Visualization</h2>
+          <img src="http://placeimg.com/640/480/people" alt="" />
+          <img src="http://placeimg.com/640/480/tech" alt="" />
+          <img src="http://placeimg.com/640/480/nature/grayscale" alt="" />
+        </div>
+
+        <!-- NOTCH -->
+        <div id="notch" data-aos="fade-up">
+          <h2>NOTCH</h2>
+          <img src="http://placeimg.com/640/480/nature" alt="" />
+          <img src="http://placeimg.com/640/480/animals" alt="" />
+          <img src="http://placeimg.com/640/480/arch" alt="" />
+        </div>
+
+        <!-- Lighting Design + Programming -->
+        <div id="lighting-design-programming" data-aos="fade-up">
+          <h2>Lighting Design + Programming</h2>
+          <img src="http://placeimg.com/640/480/people" alt="" />
+          <img src="http://placeimg.com/640/480/tech" alt="" />
+          <img src="http://placeimg.com/640/480/nature/grayscale" alt="" />
+        </div>
+
+        <!-- Media Server Programming -->
+        <div id="media-server-programming" data-aos="fade-up">
+          <h2>Media Server Programming</h2>
+          <img src="http://placeimg.com/640/480/nature" alt="" />
+          <img src="http://placeimg.com/640/480/animals" alt="" />
+          <img src="http://placeimg.com/640/480/arch" alt="" />
+        </div>
       </section>
 
       <!-- Contact -->
@@ -83,7 +129,7 @@
         </p>
       </section>
     </div>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

@@ -1,7 +1,8 @@
 /* ============================================= */
 /*              Variables                        */
 /* ============================================= */
-
+// initialize Animate on Scroll library
+AOS.init();
 const hamburger = document.querySelector(".hamburger");
 
 /**
@@ -51,3 +52,6 @@ const toggleHamburger = () => {
 /* ============================================= */
 
 hamburger.addEventListener("click", toggleHamburger);
+// window.addEventListener("scroll", (e) => {
+//   console.log(window.scrollY);
+// });
