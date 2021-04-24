@@ -8,37 +8,30 @@
     margin-top: 6rem;
     text-align: left;
     padding-bottom: 4rem;
-    // border-bottom: 1px dashed $accent-secondary;
   }
   .work-title {
-    font-size: $medium;
+    display: none;
+    width: 100%;
     position: fixed;
-    left: 64px;
-    top: 0px;
+    left: 50%;
+    top: 1%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: $small;
+    padding: 3rem 2rem 1.7rem;
+    background: #05050580;
+    opacity: 0;
+    border-radius: 10px;
+    transition: 0.5s;
+    box-shadow: 0 0 4px $accent-secondary;
   }
   .work-item-line {
     width: 50%;
     text-align: center;
     color: $accent-secondary;
   }
-  // .work-title {
-  //   font-size: $medium;
-  //   // position: fixed;
-  //   // left: 64px;
-  //   // top: 0px;
-  // }
-  // .work-title-sticky {
-  //   position: fixed;
-  //   left: 64px;
-  //   top: 0px;
-  // }
-  // .work-item:nth-child(odd) {
-  //   text-align: left;
-  // }
-  // .work-item:nth-child(even) {
-  //   text-align: right;
-  // }
   img {
+    border-radius: 5px;
     width: 90%;
     display: block;
     margin: 2rem auto;

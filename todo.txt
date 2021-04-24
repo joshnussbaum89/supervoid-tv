@@ -1,6 +1,5 @@
 TODO: 
 
-1. add sticky cumulative sub-headers as you scroll down "works" page 
-2. nav overlay or something for navigation
-3. replace awful placeholder images 
-4. instagram logo on contact section and nav 
+1. instagram logo on contact section and nav 
+2. nav overlay 
+3. design and implement footer/contact section
