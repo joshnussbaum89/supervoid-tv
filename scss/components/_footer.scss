@@ -1,3 +1,12 @@
 /* ============================================= */
 /*              Footer                           */
 /* ============================================= */
+
+.contact {
+  @include flexy($just: space-between, $align: center);
+  margin: 4rem 0 2rem;
+  padding: 4rem 0 2rem; 
+  .contact-item {
+    font-size: $medium;
+  }
+}

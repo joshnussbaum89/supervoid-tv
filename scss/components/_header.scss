@@ -2,13 +2,8 @@
 /*              Header                           */
 /* ============================================= */
 
-.header {
-  height: 100%;
-}
 #header-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include flexy($just: space-between, $align: center);
   margin: 2rem 0;
   padding-bottom: 2rem;
   border-radius: 10px;
@@ -31,7 +26,7 @@
   /* Desktop nav */
   .desktop-nav {
     display: none;
-    li {
+    a {
       margin-left: 2rem;
     }
   }

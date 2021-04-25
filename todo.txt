@@ -3,3 +3,4 @@ TODO:
 1. instagram logo on contact section and nav 
 2. nav overlay 
 3. design and implement footer/contact section
+4. maybe check out mailchimp API for signup

@@ -1,0 +1,37 @@
+/* ============================================= */
+/*              Mobile Navigation                */
+/* ============================================= */
+
+/* The mobile nav background */
+.mobile-nav {
+  height: 100vh;
+  width: 0%; // 100% when clicked
+  opacity: 0;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  color: $bg-primary;
+  background-color: $text-primary;
+  overflow-x: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+/* Position the content inside the overlay */
+.mobile-nav-content {
+  @include flexy($dir: column, $just: center);
+  margin: auto;
+  text-align: center;
+}
+
+/* The navigation links inside the overlay */
+.mobile-nav-content a {
+  color: $bg-primary;
+  padding: 1rem 0;
+  margin: 0.5rem 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: $large;
+  display: block;
+  transition: 0.3s;
+}
