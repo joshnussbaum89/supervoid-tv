@@ -10,6 +10,7 @@
     padding-bottom: 4rem;
   }
   .work-title {
+    color: #f2f2f280;
     display: none;
     width: 100%;
     position: fixed;
@@ -24,6 +25,12 @@
     border-radius: 10px;
     transition: 0.5s;
     box-shadow: 0 0 4px $accent-secondary;
+  }
+  .work-header {
+    font-size: $large;
+    padding: 2rem 0 0;
+    margin: 4rem 0 0;
+    text-align: center;
   }
   .work-item-line {
     width: 50%;

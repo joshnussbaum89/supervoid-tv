@@ -121,7 +121,7 @@ const subHeadersChangeOnScroll = () => {
 
   // Display each sub header
   workItemsArr.forEach((work, index) => {
-    if (userLocation >= work.offsetTop - 96) {
+    if (userLocation >= work.offsetTop - 334) {
       workTitle.style.display = "block";
       workTitle.style.opacity = "1";
       workTitle.textContent = workTitles[index];
