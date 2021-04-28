@@ -1,3 +1,55 @@
 /* ============================================= */
 /*              Contact                          */
 /* ============================================= */
+
+.contact-form {
+  margin: auto;
+  max-width: 650px;
+  text-align: center;
+  &-info {
+    input,
+    textarea {
+      background: $text-primary;
+      outline: none;
+      border-bottom: none;
+      border-right: none;
+      border-top: none;
+      border-left: 4px solid $border-opaque;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+    }
+    input:focus,
+    textarea:focus {
+      background: white;
+      border-left: 4px solid $accent-primary;
+    }
+  }
+  &-button {
+    font-size: $medium;
+    color: $text-primary;
+    border: 1px solid $accent-secondary;
+    background: $accent-secondary;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    width: 40%;
+    // transition: 0.2s;
+    cursor: pointer;
+    &:hover {
+      color: $accent-secondary;
+      background: $text-primary;
+    }
+  }
+}
+
+.contact-form-info {
+  @include flexy($dir: column);
+}
+
+.contact-info {
+  @include flexy($just: space-around, $align: center);
+  margin: 2rem 0 1rem;
+  padding: 1rem 0;
+  &-item {
+    font-size: $medium;
+  }
+}

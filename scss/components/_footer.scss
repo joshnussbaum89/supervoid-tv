@@ -2,11 +2,10 @@
 /*              Footer                           */
 /* ============================================= */
 
-.contact {
-  @include flexy($just: space-between, $align: center);
-  margin: 4rem 0 2rem;
-  padding: 4rem 0 2rem; 
-  .contact-item {
-    font-size: $medium;
+#footer {
+  h2 {
+    padding-top: 4rem;
+    font-size: $extra-large;
+    text-align: center;
   }
 }

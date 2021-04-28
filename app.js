@@ -2,6 +2,7 @@
 /*              Variables                        */
 /* ============================================= */
 const hamburger = document.querySelector(".hamburger");
+const footer = document.querySelector("#footer");
 
 /**
  * Initial loading screen
@@ -81,6 +82,7 @@ const subHeadersChangeOnScroll = () => {
   const work = document.querySelector("#work");
   const workItems = document.querySelectorAll(".work-item");
   const workTitle = document.querySelector(".work-title");
+  const footerLocation = footer.offsetTop;
 
   // Location of user, #work section, and first element in "music videos"
   const workLocation = work.offsetTop;
@@ -123,6 +125,12 @@ const subHeadersChangeOnScroll = () => {
       workTitle.style.display = "block";
       workTitle.style.opacity = "1";
       workTitle.textContent = workTitles[index];
+    }
+    // 14571.5
+    if (userLocation >= footerLocation - 106) {
+      workTitle.style.display = "none";
+      workTitle.style.opacity = "0";
+      workTitle.textContent = "";
     }
   });
 };
