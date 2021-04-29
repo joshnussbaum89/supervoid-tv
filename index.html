@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO -->
     <meta
       name="keywords"
       content="lighting, music, video, concerts, film, design, animation, philadelphia"
@@ -12,7 +13,64 @@
       name="description"
       content="Philly-native visual design team specializing in lighting, music videos, films, animation and more."
     />
-    <!-- Pre-loaded assets -->
+    <!-- Pre-load gifs and videos -->
+    <link rel="preload" href="/gifs/discobiscuits.gif" as="image" />
+    <link rel="preload" href="/gifs/discobiscuits.webm" as="video" />
+    <link rel="preload" href="/gifs/discobiscuits.mp4" as="video" />
+    <link rel="preload" href="/gifs/multicam-disco-biscuits.gif" as="image" />
+    <link rel="preload" href="/gifs/multicam-disco-biscuits.webm" as="video" />
+    <link rel="preload" href="/gifs/multicam-disco-biscuits.mp4" as="video" />
+    <link rel="preload" href="/gifs/multicam-rover.gif" as="image" />
+    <link rel="preload" href="/gifs/multicam-rover.webm" as="video" />
+    <link rel="preload" href="/gifs/multicam-rover.mp4" as="video" />
+    <link rel="preload" href="/gifs/multicam-vibeexhance.gif" as="image" />
+    <link rel="preload" href="/gifs/multicam-vibeexhance.webm" as="video" />
+    <link rel="preload" href="/gifs/multicam-vibeexhance.mp4" as="video" />
+    <link rel="preload" href="/gifs/music-videos-changes.gif" as="image" />
+    <link rel="preload" href="/gifs/music-videos-changes.webm" as="video" />
+    <link rel="preload" href="/gifs/music-videos-changes.mp4" as="video" />
+    <link rel="preload" href="/gifs/music-videos-cold-sweat.gif" as="image" />
+    <link rel="preload" href="/gifs/music-videos-cold-sweat.webm" as="video" />
+    <link rel="preload" href="/gifs/music-videos-cold-sweat.mp4" as="video" />
+    <link rel="preload" href="/gifs/music-videos-crown.gif" as="image" />
+    <link rel="preload" href="/gifs/music-videos-crown.webm" as="video" />
+    <link rel="preload" href="/gifs/music-videos-crown.mp4" as="video" />
+    <link rel="preload" href="/gifs/notch-gnarbot.gif" as="image" />
+    <link rel="preload" href="/gifs/notch-gnarbot.webm" as="video" />
+    <link rel="preload" href="/gifs/notch-gnarbot.mp4" as="video" />
+    <link rel="preload" href="/gifs/notch-mercury1.gif" as="image" />
+    <link rel="preload" href="/gifs/notch-mercury1.webm" as="video" />
+    <link rel="preload" href="/gifs/notch-mercury1.mp4" as="video" />
+    <link rel="preload" href="/gifs/notch-mercury2.gif" as="image" />
+    <link rel="preload" href="/gifs/notch-mercury2.webm" as="video" />
+    <link rel="preload" href="/gifs/notch-mercury2.mp4" as="video" />
+    <link rel="preload" href="/gifs/previz-1.gif" as="image" />
+    <link rel="preload" href="/gifs/previz-1.webm" as="video" />
+    <link rel="preload" href="/gifs/previz-1.mp4" as="video" />
+    <link rel="preload" href="/gifs/previz-2.gif" as="image" />
+    <link rel="preload" href="/gifs/previz-2.webm" as="video" />
+    <link rel="preload" href="/gifs/previz-2.mp4" as="video" />
+    <link rel="preload" href="/gifs/previz-3.gif" as="image" />
+    <link rel="preload" href="/gifs/previz-3.webm" as="video" />
+    <link rel="preload" href="/gifs/previz-3.mp4" as="video" />
+    <link rel="preload" href="/gifs/spotify.gif" as="image" />
+    <link rel="preload" href="/gifs/spotify.webm" as="video" />
+    <link rel="preload" href="/gifs/spotify.mp4" as="video" />
+    <link rel="preload" href="/gifs/working-on-dying.gif" as="image" />
+    <link rel="preload" href="/gifs/working-on-dying.webm" as="video" />
+    <link rel="preload" href="/gifs/working-on-dying.mp4" as="video" />
+    <!-- Pre-load images -->
+    <link rel="preload" href="/images/lights-bones.png" as="image" />
+    <link rel="preload" href="/images/lights-camp-bisco.jpg" as="image" />
+    <link rel="preload" href="/images/lights-tom-morello.jpg" as="image" />
+    <link rel="preload" href="/images/media-server-diesel.jpg" as="image" />
+    <link rel="preload" href="/images/media-server-magfest.jpg" as="image" />
+    <link
+      rel="preload"
+      href="/images/media-server-simple-creatures.jpg"
+      as="image"
+    />
+    <!-- Pre-load styles and scripts -->
     <link rel="preload" href="css/style.css" as="style" />
     <link rel="preload" href="app.js" as="script" />
     <!-- Brightfate font -->
@@ -117,62 +175,178 @@
         <h2 class="work-header">Music Videos</h2>
         <!-- Music Videos -->
         <div id="music-videos" class="work-item" data-key="0">
-          <img src="http://placeimg.com/640/480/nature" alt="" />
-          <img src="http://placeimg.com/640/480/animals" alt="" />
-          <img src="http://placeimg.com/640/480/arch" alt="" />
+          <video
+            poster="gifs/music-videos-changes.gif"
+            autoplay
+            loop
+            muted
+            playsinline
+          >
+            <source src="./gifs/music-videos-changes.webm" type="video/webm" />
+            <source src="./gifs/music-videos-changes.mp4" type="video/mp4" />
+          </video>
+          <video
+            poster="gifs/music-videos-cold-sweat.gif"
+            autoplay
+            loop
+            muted
+            playsinline
+          >
+            <source
+              src="./gifs/music-videos-cold-sweat.webm"
+              type="video/webm"
+            />
+            <source src="./gifs/music-videos-cold-sweat.mp4" type="video/mp4" />
+          </video>
         </div>
         <hr class="work-item-line" />
         <!-- Animation -->
         <h2 class="work-header">Animation</h2>
         <div id="animation" class="work-item" data-key="1">
-          <img src="http://placeimg.com/640/480/people" alt="" />
-          <img src="http://placeimg.com/640/480/tech" alt="" />
-          <img src="http://placeimg.com/640/480/nature/grayscale" alt="" />
+          <video
+            poster="gifs/working-on-dying.gif"
+            autoplay
+            loop
+            muted
+            playsinline
+          >
+            <source src="./gifs/working-on-dying.webm" type="video/webm" />
+            <source src="./gifs/working-on-dying.mp4" type="video/mp4" />
+          </video>
+          <video
+            poster="gifs/discobiscuits.gif"
+            autoplay
+            loop
+            muted
+            playsinline
+          >
+            <source src="./gifs/discobiscuits.webm" type="video/webm" />
+            <source src="./gifs/discobiscuits.mp4" type="video/mp4" />
+          </video>
+          <video poster="gifs/spotify.gif" autoplay loop muted playsinline>
+            <source src="./gifs/spotify.webm" type="video/webm" />
+            <source src="./gifs/spotify.mp4" type="video/mp4" />
+          </video>
         </div>
         <hr class="work-item-line" />
 
         <!-- Livestream + multi-cam directing -->
         <h2 class="work-header">Livestream + Multi-Cam Directing</h2>
         <div id="livesteam-multi-cam-directing" class="work-item" data-key="2">
-          <img src="http://placeimg.com/640/480/nature" alt="" />
-          <img src="http://placeimg.com/640/480/animals" alt="" />
-          <img src="http://placeimg.com/640/480/arch" alt="" />
+          <video
+            poster="gifs/multicam-disco-biscuits.gif"
+            autoplay
+            loop
+            muted
+            playsinline
+          >
+            <source
+              src="./gifs/multicam-disco-biscuits.webm"
+              type="video/webm"
+            />
+            <source src="./gifs/multicam-disco-biscuits.mp4" type="video/mp4" />
+          </video>
+          <video
+            poster="gifs/multicam-rover.gif"
+            autoplay
+            loop
+            muted
+            playsinline
+          >
+            <source src="./gifs/multicam-rover.webm" type="video/webm" />
+            <source src="./gifs/multicam-rover.mp4" type="video/mp4" />
+          </video>
+          <video
+            poster="gifs/multicam-vibeexhance.gif"
+            autoplay
+            loop
+            muted
+            playsinline
+          >
+            <source src="./gifs/multicam-vibeexhance.webm" type="video/webm" />
+            <source src="./gifs/multicam-vibeexhance.mp4" type="video/mp4" />
+          </video>
         </div>
         <hr class="work-item-line" />
 
         <!-- Pre-Visualization -->
         <h2 class="work-header">Pre-Visualization</h2>
         <div id="pre-visualization" class="work-item" data-key="3">
-          <img src="http://placeimg.com/640/480/people" alt="" />
-          <img src="http://placeimg.com/640/480/tech" alt="" />
-          <img src="http://placeimg.com/640/480/nature/grayscale" alt="" />
+          <video poster="gifs/previz-1.gif" autoplay loop muted playsinline>
+            <source src="./gifs/previz-1.webm" type="video/webm" />
+            <source src="./gifs/previz-1.mp4" type="video/mp4" />
+          </video>
+          <video poster="gifs/previz-2.gif" autoplay loop muted playsinline>
+            <source src="./gifs/previz-2.webm" type="video/webm" />
+            <source src="./gifs/previz-2.mp4" type="video/mp4" />
+          </video>
+          <video poster="gifs/previz-3.gif" autoplay loop muted playsinline>
+            <source src="./gifs/previz-3.webm" type="video/webm" />
+            <source src="./gifs/previz-3.mp4" type="video/mp4" />
+          </video>
         </div>
         <hr class="work-item-line" />
 
         <!-- NOTCH -->
         <h2 class="work-header">NOTCH</h2>
         <div id="notch" class="work-item" data-key="4">
-          <img src="http://placeimg.com/640/480/nature" alt="" />
-          <img src="http://placeimg.com/640/480/animals" alt="" />
-          <img src="http://placeimg.com/640/480/arch" alt="" />
+          <video
+            poster="gifs/notch-mercury1.gif"
+            autoplay
+            loop
+            muted
+            playsinline
+          >
+            <source src="./gifs/notch-mercury1.webm" type="video/webm" />
+            <source src="./gifs/notch-mercury1.mp4" type="video/mp4" />
+          </video>
+          <video
+            poster="gifs/notch-gnarbot.gif"
+            autoplay
+            loop
+            muted
+            playsinline
+          >
+            <source src="./gifs/notch-gnarbot.webm" type="video/webm" />
+            <source src="./gifs/notch-gnarbot.mp4" type="video/mp4" />
+          </video>
+          <video
+            poster="gifs/notch-mercury2.gif"
+            autoplay
+            loop
+            muted
+            playsinline
+          >
+            <source src="./gifs/notch-mercury2.webm" type="video/webm" />
+            <source src="./gifs/notch-mercury2.mp4" type="video/mp4" />
+          </video>
         </div>
         <hr class="work-item-line" />
 
         <!-- Lighting Design + Programming -->
         <h2 class="work-header">Lighting Design + Programming</h2>
         <div id="lighting-design-programming" class="work-item" data-key="5">
-          <img src="http://placeimg.com/640/480/people" alt="" />
-          <img src="http://placeimg.com/640/480/tech" alt="" />
-          <img src="http://placeimg.com/640/480/nature/grayscale" alt="" />
+          <img src="./images/lights-tom-morello.jpg" alt="Tom Morello, 2019" />
+          <img src="./images/lights-bones.png" alt="Bones(UK), 2019" />
+          <img
+            src="./images/lights-camp-bisco.jpg"
+            alt="Camp Bisco - The Office Stage, 2018"
+          />
         </div>
         <hr class="work-item-line" />
 
         <!-- Media Server Programming -->
         <h2 class="work-header">Media Server Programming</h2>
         <div id="media-server-programming" class="work-item" data-key="6">
-          <img src="http://placeimg.com/640/480/nature" alt="" />
-          <img src="http://placeimg.com/640/480/animals" alt="" />
-          <img src="http://placeimg.com/640/480/arch" alt="" />
+          <img
+            src="./images/media-server-simple-creatures.jpg"
+            alt="Simple Creatures, 2019"
+          />
+          <img src="./images/media-server-magfest.jpg" alt="Magfest, 2020" />
+          <img
+            src="./images/media-server-diesel.jpg"
+            alt="Diesel x ACW Activation, 2019"
+          />
         </div>
         <hr class="work-item-line" />
       </section>

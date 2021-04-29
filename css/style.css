@@ -700,7 +700,14 @@ button {
   text-align: center;
   color: #3700b3;
 }
+#work video,
 #work img {
+  border-radius: 5px;
+  width: 90%;
+  display: block;
+  margin: 2rem auto;
+}
+#work video[poster] {
   border-radius: 5px;
   width: 90%;
   display: block;
@@ -809,7 +816,11 @@ button {
   #work .work-header {
     font-size: 3rem;
   }
-  #work img {
+  #work video,
+#work img {
+    width: 70%;
+  }
+  #work video[poster] {
     width: 70%;
   }
 

@@ -29,7 +29,11 @@
     .work-header {
       font-size: $extra-large;
     }
+    video,
     img {
+      width: 70%;
+    }
+    video[poster] {
       width: 70%;
     }
   }
