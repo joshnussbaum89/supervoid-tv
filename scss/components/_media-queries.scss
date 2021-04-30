@@ -45,6 +45,12 @@
   .svg-icon {
     width: 2rem;
   }
+  #footer {
+    h2 {
+      font-size: $extra-large;
+    }
+  }
+  
 }
 
 @media (min-width: $lg) {

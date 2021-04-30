@@ -481,7 +481,7 @@ a:hover {
 /* ============================================= */
 #footer h2 {
   padding-top: 4rem;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -702,13 +702,11 @@ button {
 }
 #work video,
 #work img {
-  border-radius: 5px;
   width: 90%;
   display: block;
   margin: 2rem auto;
 }
 #work video[poster] {
-  border-radius: 5px;
   width: 90%;
   display: block;
   margin: 2rem auto;
@@ -830,6 +828,10 @@ button {
 
   .svg-icon {
     width: 2rem;
+  }
+
+  #footer h2 {
+    font-size: 3rem;
   }
 }
 @media (min-width: 992px) {
