@@ -16,8 +16,6 @@
     <!-- Pre-load styles and scripts -->
     <link rel="preload" href="css/style.css" as="style" />
     <link rel="preload" href="app.js" as="script" />
-    <!-- Main styles -->
-    <link rel="stylesheet" href="css/style.css" />
     <!-- Brightfate font -->
     <link
       rel="preload"
@@ -26,8 +24,8 @@
       type="font/otf"
       crossorigin="anonymous"
     />
-    <!-- Supervoid: Visual Design Team | Lighting, Music Videos, Concert Films |
-      Philadelphia, PA -->
+    <!-- Main styles -->
+    <link rel="stylesheet" href="css/style.css" />
     <title>
       SUPERVOID STUDIO: Visual Design, Creative Content, Livestreaming,
       Broadcast, Visual FX
@@ -39,15 +37,14 @@
       <h1>Supervoid</h1>
     </div>
     <div class="App">
-      <!-- header -->
-      <section class="header">
+      <!-- Navigation, About -->
+      <header class="header">
         <nav id="header-nav">
           <h1>
             <a href="#">Supervoid</a>
           </h1>
-          <!-- The overlay -->
+          <!-- Mobile Navigation -->
           <div id="myNav" class="mobile-nav open">
-            <!-- Overlay content -->
             <div class="mobile-nav-content">
               <a href="#about">About</a>
               <a href="#work">Work</a>
@@ -96,8 +93,8 @@
           </button>
         </nav>
 
-        <!-- <About /> -->
-        <div id="about">
+        <!-- About -->
+        <article id="about">
           <p>We are a visual design team.</p>
           <p>
             We create unique lighting, video and scenic packages for live
@@ -109,18 +106,17 @@
             We mix rich analog textures with cutting edge digital effects to
             create bespoke visions that are timeless and one of a kind.
           </p>
-        </div>
-      </section>
+        </article>
+      </header>
 
       <!-- Work -->
-      <section id="work">
+      <article id="work">
         <!-- Sub-headers dynamically added here -->
         <h2 class="work-title"></h2>
         <hr class="work-item-line" />
-        <!-- Main header -->
-        <h2 class="work-header">Music Videos</h2>
         <!-- Music Videos -->
-        <div id="music-videos" class="work-item" data-key="0">
+        <h2 class="work-header">Music Videos</h2>
+        <section id="music-videos" class="work-item" data-key="0">
           <div class="work-item-card">
             <a href="https://vimeo.com/502396950" target="_blank">
               <video autoplay loop muted playsinline>
@@ -151,13 +147,13 @@
             </a>
             <p>DECOUPLR - Cold Sweat</p>
           </div>
-        </div>
+        </section>
 
         <hr class="work-item-line" />
 
         <!-- Animation -->
         <h2 class="work-header">Animation</h2>
-        <div id="animation" class="work-item" data-key="1">
+        <section id="animation" class="work-item" data-key="1">
           <div class="work-item-card">
             <video autoplay loop muted playsinline>
               <source src="./gifs/working-on-dying.webm" type="video/webm" />
@@ -179,12 +175,17 @@
             </video>
             <p>Joe Truglio & Jonathan Davenport - Spotify Canvases</p>
           </div>
-        </div>
+        </section>
+
         <hr class="work-item-line" />
 
         <!-- Livestream + multi-cam directing -->
         <h2 class="work-header">Livestream + Multi-Cam Directing</h2>
-        <div id="livesteam-multi-cam-directing" class="work-item" data-key="2">
+        <section
+          id="livesteam-multi-cam-directing"
+          class="work-item"
+          data-key="2"
+        >
           <div class="work-item-card">
             <video autoplay loop muted playsinline>
               <source
@@ -215,12 +216,13 @@
             </video>
             <p>VibeXchange Festival</p>
           </div>
-        </div>
+        </section>
+
         <hr class="work-item-line" />
 
         <!-- Pre-Visualization -->
         <h2 class="work-header">Pre-Visualization</h2>
-        <div id="pre-visualization" class="work-item" data-key="3">
+        <section id="pre-visualization" class="work-item" data-key="3">
           <div class="work-item-card">
             <video autoplay loop muted playsinline>
               <source src="./gifs/previz-1.webm" type="video/webm" />
@@ -239,12 +241,13 @@
               <source src="./gifs/previz-3.mp4" type="video/mp4" />
             </video>
           </div>
-        </div>
+        </section>
+
         <hr class="work-item-line" />
 
         <!-- NOTCH -->
         <h2 class="work-header">NOTCH</h2>
-        <div id="notch" class="work-item" data-key="4">
+        <section id="notch" class="work-item" data-key="4">
           <div class="work-item-card">
             <video autoplay loop muted playsinline>
               <source src="./gifs/notch-mercury1.webm" type="video/webm" />
@@ -266,12 +269,17 @@
             </video>
             <p>The Mercury Brothers</p>
           </div>
-        </div>
+        </section>
+
         <hr class="work-item-line" />
 
         <!-- Lighting Design + Programming -->
         <h2 class="work-header">Lighting Design + Programming</h2>
-        <div id="lighting-design-programming" class="work-item" data-key="5">
+        <section
+          id="lighting-design-programming"
+          class="work-item"
+          data-key="5"
+        >
           <div class="work-item-card">
             <img
               src="./images/lights-tom-morello.jpg"
@@ -283,12 +291,13 @@
             <img src="./images/lights-bones.png" alt="Bones(UK), 2019" />
             <p>BONES (UK) - 2019 Tour</p>
           </div>
-        </div>
+        </section>
+
         <hr class="work-item-line" />
 
         <!-- Media Server Programming -->
         <h2 class="work-header">Media Server Programming</h2>
-        <div id="media-server-programming" class="work-item" data-key="6">
+        <section id="media-server-programming" class="work-item" data-key="6">
           <div class="work-item-card">
             <img src="./images/media-server-magfest.jpg" alt="Magfest, 2020" />
             <p>MAGFest - 2020</p>
@@ -300,9 +309,9 @@
             />
             <p>Diesel x ACW Activation - 2019</p>
           </div>
-        </div>
+        </section>
         <hr class="work-item-line" />
-      </section>
+      </article>
 
       <!-- Footer -->
       <footer id="footer">
@@ -324,7 +333,7 @@
         </form>
 
         <!-- Contact Info -->
-        <div class="contact-info">
+        <section class="contact-info">
           <span class="contact-info-item">
             <a href="#">daemon@supervoid.tv</a>
           </span>
@@ -344,7 +353,7 @@
               </svg>
             </a>
           </span>
-        </div>
+        </section>
       </footer>
     </div>
     <script src="app.js"></script>
