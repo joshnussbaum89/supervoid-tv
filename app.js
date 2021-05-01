@@ -1,40 +1,33 @@
 /**
  * Initial loading screen
  */
-const interval = setInterval(() => {
-  // Loading...
+const app = document.querySelector(".App");
+const overlay = document.querySelector(".overlay");
+const overlayTitle = document.querySelector(".overlay h1");
 
-  if (document.readyState === "complete") {
-    // Done loading...
-    clearInterval(interval);
-
-    const app = document.querySelector(".App");
-    const overlay = document.querySelector(".overlay");
-    const overlayTitle = document.querySelector(".overlay h1");
-
-    // Fade in overlay title
-    setTimeout(() => {
-      overlayTitle.style.opacity = "1";
-    }, 750);
-
-    // Fade in bottom border
-    setTimeout(() => {
-      overlayTitle.style.borderBottom = "2px solid #050505";
-    }, 1500);
-
-    // Make initial loading screen disapear
-    setTimeout(() => {
-      overlay.style.opacity = "0";
-    }, 2250);
-
-    // Remove overlay entirely
-    // Introduce the rest of the App
-    setTimeout(() => {
-      overlay.style.display = "none";
-      app.style.display = "block";
-    }, 3000);
-  }
+// Fade in overlay title
+setTimeout(() => {
+  overlayTitle.style.opacity = "1";
 }, 100);
+
+// Fade in bottom border
+setTimeout(() => {
+  overlayTitle.style.borderBottom = "2px solid #050505";
+}, 1500);
+
+// Make initial loading screen disapear
+setTimeout(() => {
+  clearInterval();
+  overlay.style.opacity = "0";
+}, 3000);
+
+// Remove overlay entirely
+// Introduce the rest of the App
+setTimeout(() => {
+  overlay.style.display = "none";
+  app.style.display = "block";
+  console.log(document.readyState);
+}, 4000);
 
 /* ============================================= */
 /*              Variables                        */
