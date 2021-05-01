@@ -1,6 +1,9 @@
 TODO: 
 
-1. instagram logo on contact section and nav 
-2. nav overlay 
-3. design and implement footer/contact section
-4. maybe check out mailchimp API for signup
+1. Create site map - https://www.xml-sitemaps.com/  
+2. Create robots.txt file 
+- https://developers.google.com/search/docs/advanced/robots/create-robots-txt?hl=en&visit_id=637554833601491323-460805641&rd=1
+- https://moz.com/learn/seo/robotstxt
+- or use generator
+3. Both should be in the root directory
+4. Add favicon
