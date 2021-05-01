@@ -133,7 +133,6 @@ const subHeadersChangeOnScroll = () => {
       workTitle.style.opacity = "1";
       workTitle.textContent = workTitles[index];
     }
-    // 14571.5
     if (userLocation >= footerLocation - 106) {
       workTitle.style.display = "none";
       workTitle.style.opacity = "0";
