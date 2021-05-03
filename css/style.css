@@ -755,38 +755,68 @@ button {
 /*              overlay                          */
 /* ============================================= */
 .overlay {
-  font-size: 1.3rem;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   position: absolute;
   z-index: 100;
   top: 0;
   right: 0;
-  transition: 0.5s ease-in-out;
-  background: #f2f2f2;
-  color: #050505;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+  background: black;
   height: 100vh;
   width: 100vw;
 }
-.overlay h1 {
-  opacity: 0;
-  margin-right: 4rem;
-  padding-bottom: 2rem;
-  transition: 0.5s ease-in-out;
-  border-bottom: 2px solid #f2f2f2;
+.overlay-tv {
+  position: absolute;
+  border-radius: 15px;
+  fill: #f2f2f2;
+  top: 70px;
+  left: 15px;
+  width: 350px;
+  box-shadow: -7px 30px 18px -30px #3700b3;
+}
+.overlay-animation {
+  border-radius: 15px;
+  position: absolute;
+  top: 178px;
+  left: 45px;
+  width: 220px;
+  height: 220px;
 }
 
 /* ============================================= */
 /*              Media Queries                    */
 /* ============================================= */
+@media (min-width: 576px) {
+  .overlay-tv {
+    top: 70px;
+    left: 150px;
+    width: 400px;
+  }
+  .overlay-animation {
+    top: 190px;
+    left: 180px;
+    width: 255px;
+    height: 255px;
+  }
+}
 @media (min-width: 768px) {
   body {
     margin: 1rem 4rem;
   }
 
-  .overlay {
-    font-size: 2rem;
+  .overlay-tv {
+    top: 70px;
+    left: 170px;
+    width: 450px;
+  }
+  .overlay-animation {
+    top: 208px;
+    left: 210px;
+    width: 280px;
+    height: 280px;
   }
 
   #about {
@@ -826,6 +856,18 @@ button {
   }
 }
 @media (min-width: 992px) {
+  .overlay-tv {
+    top: 82px;
+    left: 300px;
+    width: 450px;
+  }
+  .overlay-animation {
+    top: 220px;
+    left: 340px;
+    width: 280px;
+    height: 280px;
+  }
+
   #header-nav h1 {
     font-size: 3rem;
   }
@@ -840,6 +882,19 @@ button {
   #work .work-item-card,
 #work .work-item-line {
     width: 70%;
+  }
+}
+@media (min-width: 1200px) {
+  .overlay-tv {
+    top: 82px;
+    left: 400px;
+    width: 500px;
+  }
+  .overlay-animation {
+    top: 235px;
+    left: 442px;
+    width: 310px;
+    height: 310px;
   }
 }
 
