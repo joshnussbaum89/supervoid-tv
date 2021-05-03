@@ -7,4 +7,3 @@ TODO:
 - or use generator
 3. Both should be in the root directory
 4. Add favicon
-5. Go through drews email todos
