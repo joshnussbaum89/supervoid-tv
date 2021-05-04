@@ -26,7 +26,6 @@ const loadingScreenAnimation = () => {
     overlay.style.opacity = "0";
   }, 5000);
   // Remove overlay entirely
-  // Introduce the rest of the App
   setTimeout(() => {
     overlay.style.display = "none";
     app.style.display = "block";
@@ -132,8 +131,25 @@ const subHeadersChangeOnScroll = () => {
 /*              Event Listeners                  */
 /* ============================================= */
 
-// Initial page animation
-window.addEventListener("load", loadingScreenAnimation);
+// Make sure animation works as expected on Safari
+if (navigator.appVersion.includes("Safari")) {
+  setTimeout(() => {
+    overlay.style.opacity = "1";
+  }, 1000);
+  // Make initial loading screen disapear
+  setTimeout(() => {
+    clearInterval();
+    overlay.style.opacity = "0";
+  }, 5000);
+  // Remove overlay entirely
+  setTimeout(() => {
+    overlay.style.display = "none";
+    app.style.display = "block";
+  }, 6000);
+} else {
+  // Initial page animation on all other browsers
+  window.addEventListener("load", loadingScreenAnimation);
+}
 // Mobile nav toggle
 hamburger.addEventListener("click", toggleHamburger);
 // Listen for user scrolls to dynamically change sub headers
