@@ -12,33 +12,32 @@ const footer = document.querySelector("#footer");
 /*              Functions                        */
 /* ============================================= */
 
+// Disable animation on Safari
+if (
+  navigator.userAgent.includes("Safari") &&
+  !navigator.userAgent.includes("Chrome")
+) {
+  overlay.style.display = "none";
+  app.style.display = "block";
+}
 /**
  * Once page is fully loaded, display TV animation
  */
 const loadingScreenAnimation = () => {
-  // Disable animation on Safari
-  if (
-    navigator.userAgent.includes("Safari") &&
-    !navigator.userAgent.includes("Chrome")
-  ) {
+  // Fade in overlay title
+  setTimeout(() => {
+    overlay.style.opacity = "1";
+  }, 100);
+  // Make initial loading screen disapear
+  setTimeout(() => {
+    clearInterval();
+    overlay.style.opacity = "0";
+  }, 5000);
+  // Remove overlay entirely
+  setTimeout(() => {
     overlay.style.display = "none";
     app.style.display = "block";
-  } else {
-    // Fade in overlay title
-    setTimeout(() => {
-      overlay.style.opacity = "1";
-    }, 100);
-    // Make initial loading screen disapear
-    setTimeout(() => {
-      clearInterval();
-      overlay.style.opacity = "0";
-    }, 5000);
-    // Remove overlay entirely
-    setTimeout(() => {
-      overlay.style.display = "none";
-      app.style.display = "block";
-    }, 6000);
-  }
+  }, 6000);
 };
 
 /**
