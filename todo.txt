@@ -1,7 +1,0 @@
-TODO: 
-
-1. Create site map - https://www.xml-sitemaps.com/ OR Netlify plugin
-2. Both should be in the root directory
-3. Wire up contact form to Netlify
-4. Minify HTML with Netlify plugin
-5. Image Optim Netlify plugin
