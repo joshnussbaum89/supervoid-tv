@@ -13,22 +13,21 @@
   background: black;
   height: 100vh;
   width: 100vw;
-  &-tv {
+  &-container {
     position: absolute;
-    border-radius: 15px;
-    fill: $text-primary;
-    top: 70px;
-    left: 15px;
-    width: 350px;
-    box-shadow: -7px 30px 18px -30px lighten($accent-secondary, 0%);
-  }
-
-  &-animation {
-    border-radius: 15px;
-    position: absolute;
-    top: 178px;
-    left: 45px;
-    width: 220px;
-    height: 220px;
+    &-tv {
+      fill: $text-primary;
+      border-radius: 15px;
+      width: 350px;
+      box-shadow: -7px 30px 18px -30px lighten($accent-secondary, 0%);
+    }
+    &-animation {
+      border-radius: 15px;
+      position: absolute;
+      top: 107px;
+      left: 8%;
+      width: 220px;
+      height: 220px;
+    }
   }
 }

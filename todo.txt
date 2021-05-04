@@ -1,11 +1,7 @@
 TODO: 
 
 1. Create site map - https://www.xml-sitemaps.com/ OR Netlify plugin
-2. Create robots.txt file 
-- https://developers.google.com/search/docs/advanced/robots/create-robots-txt?hl=en&visit_id=637554833601491323-460805641&rd=1
-- https://moz.com/learn/seo/robotstxt
-- or use generator
-3. Both should be in the root directory
-4. Wire up contact form to Netlify
-5. Minify HTML with Netlify plugin
-6. Image Optim Netlify plugin
+2. Both should be in the root directory
+3. Wire up contact form to Netlify
+4. Minify HTML with Netlify plugin
+5. Image Optim Netlify plugin

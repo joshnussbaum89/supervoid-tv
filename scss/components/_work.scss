@@ -31,8 +31,9 @@
     margin: 4rem 0 0;
     text-align: center;
   }
-  hr {
+  .work-item-line {
     width: 100%;
+    max-width: 800px;
     text-align: center;
     height: 1px;
     border: none;
@@ -41,6 +42,7 @@
   }
   .work-item-card {
     width: 100%;
+    max-width: 800px;
     display: block;
     margin: 2rem auto;
     p {

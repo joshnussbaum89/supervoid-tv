@@ -2,40 +2,24 @@
 /*              Media Queries                    */
 /* ============================================= */
 
-@media (min-width: $sm) {
-  .overlay {
-    &-tv {
-      top: 70px;
-      left: 150px;
-      width: 400px;
-    }
-    &-animation {
-      top: 190px;
-      left: 180px;
-      width: 255px;
-      height: 255px;
-    }
-  }
-}
-
 @media (min-width: $md) {
   body {
     margin: 1rem 4rem;
   }
-  .overlay {
+  .overlay-container {
     &-tv {
-      top: 70px;
-      left: 170px;
       width: 450px;
     }
     &-animation {
-      top: 208px;
-      left: 210px;
+      top: 136px;
       width: 280px;
       height: 280px;
     }
   }
   #about {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
     text-align: center;
     font-size: 1.5rem;
   }
@@ -76,19 +60,6 @@
 }
 
 @media (min-width: $lg) {
-  .overlay {
-    &-tv {
-      top: 82px;
-      left: 300px;
-      width: 450px;
-    }
-    &-animation {
-      top: 220px;
-      left: 340px;
-      width: 280px;
-      height: 280px;
-    }
-  }
   #header-nav {
     h1 {
       font-size: $extra-large;
@@ -109,17 +80,14 @@
 }
 
 @media (min-width: $xlg) {
-  .overlay {
+  .overlay-container {
     &-tv {
-      top: 82px;
-      left: 400px;
       width: 500px;
     }
     &-animation {
-      top: 235px;
-      left: 442px;
-      width: 310px;
-      height: 310px;
+      top: 152px;
+      width: 315px;
+      height: 315px;
     }
   }
 }

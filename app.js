@@ -1,12 +1,21 @@
-/**
- * Initial loading screen
- */
+/* ============================================= */
+/*              Variables                        */
+/* ============================================= */
 const app = document.querySelector(".App");
 const overlay = document.querySelector(".overlay");
 const overlayAnimation = document.querySelector(".overlay-animation");
 const overlayTv = document.querySelector(".overlay-tv");
+const hamburger = document.querySelector(".hamburger");
+const footer = document.querySelector("#footer");
 
-window.addEventListener("load", (event) => {
+/* ============================================= */
+/*              Functions                        */
+/* ============================================= */
+
+/**
+ * Once page is fully loaded, display TV animation
+ */
+const loadingScreenAnimation = () => {
   // Fade in overlay title
   setTimeout(() => {
     overlay.style.opacity = "1";
@@ -22,17 +31,7 @@ window.addEventListener("load", (event) => {
     overlay.style.display = "none";
     app.style.display = "block";
   }, 6000);
-});
-
-/* ============================================= */
-/*              Variables                        */
-/* ============================================= */
-const hamburger = document.querySelector(".hamburger");
-const footer = document.querySelector("#footer");
-
-/* ============================================= */
-/*              Functions                        */
-/* ============================================= */
+};
 
 /**
  * Hamburger nav listener
@@ -133,6 +132,8 @@ const subHeadersChangeOnScroll = () => {
 /*              Event Listeners                  */
 /* ============================================= */
 
+// Initial page animation
+window.addEventListener("load", loadingScreenAnimation);
 // Mobile nav toggle
 hamburger.addEventListener("click", toggleHamburger);
 // Listen for user scrolls to dynamically change sub headers
