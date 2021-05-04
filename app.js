@@ -131,7 +131,18 @@ const subHeadersChangeOnScroll = () => {
 /*              Event Listeners                  */
 /* ============================================= */
 
-window.addEventListener("load", loadingScreenAnimation);
+// Disable animation on Safari, because Safari is a little bitch
+window.addEventListener("load", () => {
+  if (
+    navigator.userAgent.includes("Safari") &&
+    !navigator.userAgent.includes("Chrome")
+  ) {
+    overlay.style.display = "none";
+    app.style.display = "block";
+  } else {
+    loadingScreenAnimation();
+  }
+});
 // Mobile nav toggle
 hamburger.addEventListener("click", toggleHamburger);
 // Listen for user scrolls to dynamically change sub headers
