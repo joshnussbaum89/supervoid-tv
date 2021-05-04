@@ -16,20 +16,29 @@ const footer = document.querySelector("#footer");
  * Once page is fully loaded, display TV animation
  */
 const loadingScreenAnimation = () => {
-  // Fade in overlay title
-  setTimeout(() => {
-    overlay.style.opacity = "1";
-  }, 100);
-  // Make initial loading screen disapear
-  setTimeout(() => {
-    clearInterval();
-    overlay.style.opacity = "0";
-  }, 5000);
-  // Remove overlay entirely
-  setTimeout(() => {
+  // Disable animation on Safari
+  if (
+    navigator.userAgent.includes("Safari") &&
+    !navigator.userAgent.includes("Chrome")
+  ) {
     overlay.style.display = "none";
     app.style.display = "block";
-  }, 6000);
+  } else {
+    // Fade in overlay title
+    setTimeout(() => {
+      overlay.style.opacity = "1";
+    }, 100);
+    // Make initial loading screen disapear
+    setTimeout(() => {
+      clearInterval();
+      overlay.style.opacity = "0";
+    }, 5000);
+    // Remove overlay entirely
+    setTimeout(() => {
+      overlay.style.display = "none";
+      app.style.display = "block";
+    }, 6000);
+  }
 };
 
 /**
@@ -131,18 +140,8 @@ const subHeadersChangeOnScroll = () => {
 /*              Event Listeners                  */
 /* ============================================= */
 
-// Disable animation on Safari, because Safari is a little bitch
-window.addEventListener("load", () => {
-  if (
-    navigator.userAgent.includes("Safari") &&
-    !navigator.userAgent.includes("Chrome")
-  ) {
-    overlay.style.display = "none";
-    app.style.display = "block";
-  } else {
-    loadingScreenAnimation();
-  }
-});
+// Loading screen animation when plage loads
+window.addEventListener("load", loadingScreenAnimation);
 // Mobile nav toggle
 hamburger.addEventListener("click", toggleHamburger);
 // Listen for user scrolls to dynamically change sub headers
