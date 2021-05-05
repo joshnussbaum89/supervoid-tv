@@ -6,7 +6,7 @@ const overlay = document.querySelector(".overlay");
 const overlayAnimation = document.querySelector(".overlay-animation");
 const overlayTv = document.querySelector(".overlay-tv");
 const hamburger = document.querySelector(".hamburger");
-const footer = document.querySelector("#footer");
+const footer = document.querySelector("#contact");
 
 /* ============================================= */
 /*              Functions                        */
