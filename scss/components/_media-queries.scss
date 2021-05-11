@@ -44,11 +44,6 @@
       width: 90%;
     }
   }
-  .contact-info {
-    &-item {
-      font-size: $large;
-    }
-  }
   .svg-icon {
     width: 2rem;
   }
@@ -56,6 +51,11 @@
     h2 {
       font-size: $extra-large;
     }
+  }
+  // buttons
+  .call-to-action,
+  .contact-form-button {
+    font-size: $medium;
   }
 }
 

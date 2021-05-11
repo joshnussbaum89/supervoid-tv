@@ -95,12 +95,12 @@ const subHeadersChangeOnScroll = () => {
 
   // Header titles to compare with data-key in HTML
   const workTitles = {
-    0: "Music Videos",
-    1: "Animation",
-    2: "Livestream + Multi-cam Directing",
-    3: "Pre-Visualization",
-    4: "NOTCH",
-    5: "Lighting Design + Programming",
+    0: "Livestream + Multi-cam Directing",
+    1: "Lighting Design + Programming",
+    2: "NOTCH",
+    3: "Animation",
+    4: "Music Videos",
+    5: "Pre-Visualization",
     6: "Media Server Programming",
   };
 

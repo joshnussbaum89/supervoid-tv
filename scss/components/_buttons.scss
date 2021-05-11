@@ -1,0 +1,20 @@
+/* ============================================= */
+/*              Components Imports               */
+/* ============================================= */
+
+.call-to-action,
+.contact-form-button {
+  font-size: $small;
+  color: $text-primary;
+  border: 1px solid $accent-secondary;
+  border-radius: 0;
+  background: $accent-secondary;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  width: 40%;
+  cursor: pointer;
+  &:hover {
+    color: $accent-secondary;
+    background: $text-primary;
+  }
+}
